@@ -10,3 +10,4 @@ export class AppComponent  {
   place='sod';
   cost=12.3;
 }
+let columns=['name','place','cost'];
