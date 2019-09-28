@@ -1,13 +1,22 @@
-<head>
-<script>
-let columns=['name','place','cost'];
-</script>
-</head>
 <hello name="{{ name }}"></hello>
 <p>
   Start editing to see some magic happen :)
   <br/>magic place <b>{{place}}</b>, cost {{cost}}
 </p>
 <br/>
-Columns:{{columns}}
-boom
+
+Columns:{{columns}}<br/>
+<table mdbTable bordered="true">
+  <thead>
+    <tr>
+      <th *ngFor="let head of columns" scope="col">{{head}} </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td>{{name}}</td>
+    <td>{{place}}</td>
+    <td>{{cost}}</td>
+    </tr>
+  </tbody>
+</table>

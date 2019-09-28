@@ -9,5 +9,5 @@ export class AppComponent  {
   name = 'Angular';
   place='sod';
   cost=12.3;
+  columns=['name','place','cost'];
 }
-let columns=['name','place','cost'];
