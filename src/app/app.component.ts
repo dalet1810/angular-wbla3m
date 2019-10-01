@@ -10,4 +10,9 @@ export class AppComponent  {
   place='sod';
   cost=12.3;
   columns=['name','place','cost'];
+  tab2=[
+    {name:'yasha', place:'makom', cost:3.0},
+    {name:'sasha', place:'trantor', cost:11.2},
+    {name:'mitya', place:'bilek', cost:9.73}
+  ];
 }
