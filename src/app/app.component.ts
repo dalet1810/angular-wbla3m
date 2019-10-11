@@ -15,4 +15,7 @@ export class AppComponent  {
     {name:'sasha', place:'trantor', cost:11.2},
     {name:'mitya', place:'bilek', cost:9.73}
   ];
+  
+  fixed2 = function(x: string): string 
+    {return parseFloat(x).toFixed(2);};
 }
