@@ -35,3 +35,19 @@ Columns:{{columns}}<br/>
      cost2: {{fixed2(12.345)}}
   </p>
 </div>
+<div id='rows'>
+  <table style="width:60%;">
+    <thead>
+    <tr>
+      <th *ngFor="let itm of columnDefs">{{itm.headerName}}</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let itm of rowData">
+      <td>{{itm.make}}</td>
+      <td>{{itm.model}}</td>
+      <td>{{itm.price}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

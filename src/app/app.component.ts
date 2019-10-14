@@ -15,6 +15,18 @@ export class AppComponent  {
     {name:'sasha', place:'trantor', cost:11.2},
     {name:'mitya', place:'bilek', cost:9.73}
   ];
+
+  columnDefs = [
+        {headerName: 'Make', field: 'make' },
+        {headerName: 'Model', field: 'model' },
+        {headerName: 'Price', field: 'price'}
+  ];
+
+  rowData = [
+        { make: 'Toyota', model: 'Celica', price: 35000 },
+        { make: 'Ford', model: 'Mondeo', price: 32000 },
+        { make: 'Porsche', model: 'Boxter', price: 72000 }
+  ];
   
   fixed2 = function(x: string): string 
     {return parseFloat(x).toFixed(2);};
