@@ -17,8 +17,8 @@ export class AppComponent  {
   ];
 
   columnDefs = [
-        {headerName: 'Make', field: 'make' },
-        {headerName: 'Model', field: 'model' },
+        {headerName: 'Make', field: 'make', resizable: true },
+        {headerName: 'Model', field: 'model' , resizable: true},
         {headerName: 'Price', field: 'price', width: 100}
   ];
 
