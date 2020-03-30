@@ -33,6 +33,8 @@ Columns:{{columns}}<br/>
   </table>
   <p>
      cost2: {{fixed2(12.345)}}
+     <br/>
+     {{fixer4(selectedNodes.length)}}
   </p>
 </div>
 <div id='cars'>
@@ -41,6 +43,9 @@ Columns:{{columns}}<br/>
     class="ag-theme-balham"
     [rowData]="rowData" 
     [columnDefs]="columnDefs"
+
+    rowSelection="single"
+    (rowSelected)="onRowSelected($event)"
     >
 </ag-grid-angular>
 

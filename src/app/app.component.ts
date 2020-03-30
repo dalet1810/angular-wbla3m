@@ -31,4 +31,18 @@ export class AppComponent  {
   
   fixed2 = function(x: string): string 
     {return parseFloat(x).toFixed(2);};
+
+    selectedNodes = [];         
+    fixer4= function(node : any) {
+      console.log('fixer4:'+node.length);
+    }
+
+
+onRowSelected(event) {
+  console.log('selected:' + event.node.selected);
+  console.log('selected node:' + event.node);
+   if(event.node.selected) {
+      this.selectedNodes.push(event.node);
+   }
+}
 }
