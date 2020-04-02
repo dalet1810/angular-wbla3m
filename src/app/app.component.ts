@@ -33,8 +33,9 @@ export class AppComponent  {
     {return parseFloat(x).toFixed(2);};
 
     selectedNodes = [];         
-    fixer4= function(node : any) {
+    fixer4= function(node : any) : any {
       console.log('fixer4 keys:'+Object.keys(node));
+      return node.data;
     }
 
 
@@ -43,9 +44,14 @@ onRowSelected(event) {
   //console.log('selected node:' + Object.keys(event.node));
  if(event.node.selected){ 
    console.log('selected rowIindex:' + event.rowIndex);
+   console.log('selected data:' + Object.keys(event));
+   console.log('selected data items:'+
+    event.data.make + " " + event.data.model + " $" + event.data.price);
+   //event.api.getSelected();
  }
    if(event.node.selected) {
-      this.selectedNodes.push(event.node);
+      //this.selectedNodes.push(event.data);
+      this.selectedNodes = [event.data];
    }
 }
 }
