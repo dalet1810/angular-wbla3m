@@ -34,13 +34,16 @@ export class AppComponent  {
 
     selectedNodes = [];         
     fixer4= function(node : any) {
-      console.log('fixer4:'+node.length);
+      console.log('fixer4 keys:'+Object.keys(node));
     }
 
 
 onRowSelected(event) {
   console.log('selected:' + event.node.selected);
-  console.log('selected node:' + event.node);
+  //console.log('selected node:' + Object.keys(event.node));
+ if(event.node.selected){ 
+   console.log('selected rowIindex:' + event.rowIndex);
+ }
    if(event.node.selected) {
       this.selectedNodes.push(event.node);
    }
