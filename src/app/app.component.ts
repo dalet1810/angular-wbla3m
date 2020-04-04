@@ -44,7 +44,7 @@ onRowSelected(event) {
   console.log('selected:' + event.node.selected);
   //console.log('selected node:' + Object.keys(event.node));
  if(event.node.selected){ 
-   console.log('selected rowIindex:' + event.rowIndex);
+   console.log('selected row index:' + event.rowIndex);
    console.log('selected data:' + Object.keys(event));
    console.log('selected data items:'+
     event.data.make + " " + event.data.model + " $" + event.data.price);
