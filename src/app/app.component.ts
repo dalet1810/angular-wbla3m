@@ -43,14 +43,14 @@ export class AppComponent  {
 onRowSelected(event) {
   console.log('selected:' + event.node.selected);
   //console.log('selected node:' + Object.keys(event.node));
- if(event.node.selected){ 
+  if(event.node.selected){ 
    console.log('selected row index:' + event.rowIndex);
    console.log('selected data:' + Object.keys(event));
    console.log('selected data items:'+
     event.data.make + " " + event.data.model + " $" + event.data.price);
    //event.api.getSelected();
- }
-   if(event.node.selected) {
+  }
+  if(event.node.selected) {
       //this.selectedNodes.push(event.data);
       this.selectedNodes = [event.data];
       this.selectData = event.data;
