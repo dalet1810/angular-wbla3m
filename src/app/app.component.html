@@ -40,9 +40,14 @@ Columns:{{columns}}<br/>
      [{{selectData.make}}, {{selectData.model}}, {{selectData.price}}]
   </p>
   <p>
+
     Generated detail:
-    {{kf1(selectData)}}
-  </p>
+    <ol>
+    <li *ngFor="let itm0 of kf1(selectData)" >
+      {{itm0}} </li>
+    </ol>
+    <!--{{kf1(selectData)}}-->
+  
 
 </div>
 <div id='cars'>
