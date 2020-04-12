@@ -56,4 +56,14 @@ onRowSelected(event) {
       this.selectData = event.data;
    }
 }
+kf1 = function(rowV:any): any {
+ 
+ let r=[]; 
+ let k0=Object.keys(rowV);
+ for(let i=0; i<k0.length; i++) {
+   r.push(k0[i] +':'+rowV[k0[i]])
+ }
+ return(r);
+}
+
 }
